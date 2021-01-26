@@ -8,7 +8,8 @@ https://www.python.org/
 
 Clonar el repositorio
 
-https://github.com/marisleidy/Wolox_Technical_Test.git
+https://github.com/marisleidy/Wolox_Technical_Test.
+
 Instalar Robot framework (pip install robotframework)
 
 Instalar robotframework-seleniumlibrary (pip install robotframework-seleniumlibrary)
