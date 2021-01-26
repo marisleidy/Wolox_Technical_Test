@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200512 15:58:15.741" generator="Robot 3.1.2 (Python 2.7.16 on win32)">
+<suite source="D:\QA\RobotFramework-POM_Tests\RobotFramework-POM_Tests\RobotFrameworkTest\TestCase\e2e\specs\smoke\create_account.robot" id="s1" name="Create Account">
+<test id="s1-t1" name="Create an account">
+<kw name="Create an account in Gmail">
+<kw name="Give I am in Gmail create account page">
+<msg timestamp="20200512 15:58:22.553" level="FAIL">No keyword with name 'Give I am in Gmail create account page' found.</msg>
+<status status="FAIL" endtime="20200512 15:58:22.553" starttime="20200512 15:58:22.553"></status>
+</kw>
+<status status="FAIL" endtime="20200512 15:58:22.554" starttime="20200512 15:58:22.535"></status>
+</kw>
+<status status="FAIL" endtime="20200512 15:58:22.555" critical="yes" starttime="20200512 15:58:22.534">No keyword with name 'Give I am in Gmail create account page' found.</status>
+</test>
+<status status="FAIL" endtime="20200512 15:58:22.558" starttime="20200512 15:58:15.760"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Create Account" pass="0">Create Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

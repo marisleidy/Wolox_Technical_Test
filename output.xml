@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20210125 17:58:20.876" rpa="false">
+<suite id="s1" name="Update Profile" source="C:\Users\Marisleidy\Desktop\Wappi\e2e\specs\smoke\Update_Profile.robot">
+<test id="s1-t1" name="Update Profile Information on the Wappi Page">
+<kw name="Given I am Login to the Wappi page">
+<kw name="Given I am in Wappi page" library="authentication">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://automation-wappi.vercel.app/login</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210125 17:58:21.224" level="INFO">Opening browser 'chrome' to base url 'https://automation-wappi.vercel.app/login'.</msg>
+<status status="PASS" starttime="20210125 17:58:21.224" endtime="20210125 17:58:26.628"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:21.223" endtime="20210125 17:58:26.628"></status>
+</kw>
+<kw name="When I fill the &quot;Usuario&quot; field with &quot;Tester&quot;" library="authentication">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Name}</arg>
+<arg>Tester</arg>
+</arguments>
+<msg timestamp="20210125 17:58:26.629" level="INFO">Typing text 'Tester' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20210125 17:58:26.629" endtime="20210125 17:58:26.761"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:26.628" endtime="20210125 17:58:26.761"></status>
+</kw>
+<kw name="And I fill the &quot;Contraseña&quot; field with &quot;Prueba123*&quot;" library="authentication">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>Prueba123</arg>
+</arguments>
+<msg timestamp="20210125 17:58:26.763" level="INFO">Typing text 'Prueba123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210125 17:58:26.762" endtime="20210125 17:58:26.896"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:26.762" endtime="20210125 17:58:26.896"></status>
+</kw>
+<kw name="Then I press the &quot;Ingresar&quot; button" library="authentication">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${button}</arg>
+</arguments>
+<msg timestamp="20210125 17:58:26.897" level="INFO">Clicking element 'id:button-login'.</msg>
+<status status="PASS" starttime="20210125 17:58:26.897" endtime="20210125 17:58:27.024"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:26.897" endtime="20210125 17:58:27.024"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:21.223" endtime="20210125 17:58:27.024"></status>
+</kw>
+<kw name="When Update Profile Information">
+<kw name="Given I am in Wappi home page" library="update_information">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Panel}</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:27.026" endtime="20210125 17:58:27.066"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.026" endtime="20210125 17:58:27.066"></status>
+</kw>
+<kw name="When I press the &quot;Informacion Personal&quot;" library="update_information">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Panel}</arg>
+</arguments>
+<msg timestamp="20210125 17:58:27.067" level="INFO">Clicking element 'XPath:/html/body/app-root/app-home/app-nav-bar/nav/ul[1]/li[4]'.</msg>
+<status status="PASS" starttime="20210125 17:58:27.067" endtime="20210125 17:58:27.210"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.066" endtime="20210125 17:58:27.211"></status>
+</kw>
+<kw name="And I fill the &quot;Nombre&quot; field with &quot;Marisleidy&quot;" library="update_information">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${User_Name}</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:27.212" endtime="20210125 17:58:27.256"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${User_Name}</arg>
+<arg>Marisleidy</arg>
+</arguments>
+<msg timestamp="20210125 17:58:27.258" level="INFO">Typing text 'Marisleidy' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210125 17:58:27.257" endtime="20210125 17:58:27.412"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.211" endtime="20210125 17:58:27.413"></status>
+</kw>
+<kw name="And I fill the &quot;Apellido&quot; field with &quot;Mora&quot;" library="update_information">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Last_Name}</arg>
+<arg>Mora</arg>
+</arguments>
+<msg timestamp="20210125 17:58:27.414" level="INFO">Typing text 'Mora' into text field 'id:lastName'.</msg>
+<status status="PASS" starttime="20210125 17:58:27.413" endtime="20210125 17:58:27.548"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.413" endtime="20210125 17:58:27.548"></status>
+</kw>
+<kw name="And I fill the &quot;Fecha de nacimiento&quot; field with &quot;29/11/1985&quot;" library="update_information">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Fecha}</arg>
+<arg>29/11/1985</arg>
+</arguments>
+<msg timestamp="20210125 17:58:27.550" level="INFO">Typing text '29/11/1985' into text field 'id:bornDate'.</msg>
+<status status="PASS" starttime="20210125 17:58:27.549" endtime="20210125 17:58:27.675"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.548" endtime="20210125 17:58:27.675"></status>
+</kw>
+<kw name="And I fill the &quot;Pais&quot; field with &quot;Colombia&quot;" library="update_information">
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>country</arg>
+<arg>Colombia</arg>
+</arguments>
+<msg timestamp="20210125 17:58:27.676" level="INFO">Selecting options from selection list 'country' by label Colombia.</msg>
+<status status="PASS" starttime="20210125 17:58:27.676" endtime="20210125 17:58:27.872"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.675" endtime="20210125 17:58:27.873"></status>
+</kw>
+<kw name="And I select the &quot;Sexo&quot; field with &quot;Femenino&quot;" library="update_information">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>F</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:27.874" endtime="20210125 17:58:27.913"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sex}</arg>
+</arguments>
+<msg timestamp="20210125 17:58:27.913" level="INFO">Clicking element 'XPath://*[@id="F"]'.</msg>
+<status status="PASS" starttime="20210125 17:58:27.913" endtime="20210125 17:58:27.976"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.873" endtime="20210125 17:58:27.977"></status>
+</kw>
+<kw name="And I upload the photo" library="update_information">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${UploadFiletest}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:27.977" endtime="20210125 17:58:27.991"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${UploadFiletest}</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:27.991" endtime="20210125 17:58:28.384"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>${UploadFiletest}</arg>
+<arg>${AddFile}</arg>
+</arguments>
+<msg timestamp="20210125 17:58:28.385" level="INFO">Sending C:\FICHA_LA_NAVIDAD.jpeg to browser.</msg>
+<status status="PASS" starttime="20210125 17:58:28.385" endtime="20210125 17:58:28.527"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.977" endtime="20210125 17:58:28.527"></status>
+</kw>
+<kw name="Then I press the &quot;Guardar&quot; button" library="update_information">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Save_Button}</arg>
+</arguments>
+<msg timestamp="20210125 17:58:28.528" level="INFO">Clicking element 'id:save-profile'.</msg>
+<status status="PASS" starttime="20210125 17:58:28.528" endtime="20210125 17:58:28.593"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:28.527" endtime="20210125 17:58:28.594"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:27.025" endtime="20210125 17:58:28.594"></status>
+</kw>
+<kw name="Then The user's data are updated">
+<kw name="Given Displayed a registration confirmation message" library="message_confirmation">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Modal}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:28.597" endtime="20210125 17:58:28.630"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Modal_confirmation_Text}</arg>
+</arguments>
+<status status="PASS" starttime="20210125 17:58:28.630" endtime="20210125 17:58:28.666"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:28.597" endtime="20210125 17:58:28.666"></status>
+</kw>
+<kw name="then The data is updated" library="message_confirmation">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${close}</arg>
+</arguments>
+<msg timestamp="20210125 17:58:28.667" level="INFO">Clicking element 'XPath://*[@id="confirmation-modal"]/div/span'.</msg>
+<status status="PASS" starttime="20210125 17:58:28.666" endtime="20210125 17:58:28.772"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:28.666" endtime="20210125 17:58:28.772"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:28.595" endtime="20210125 17:58:28.773"></status>
+</kw>
+<status status="PASS" starttime="20210125 17:58:21.221" endtime="20210125 17:58:28.776" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210125 17:58:20.881" endtime="20210125 17:58:28.786"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Update Profile">Update Profile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

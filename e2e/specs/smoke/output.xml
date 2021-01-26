@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200331 08:23:31.363" rpa="false">
+<suite id="s1" name="Search" source="D:\Automation training\Robot Framework\RobotFramework\RobotFramework\TestCase\e2e\specs\smoke\search.robot">
+<test id="s1-t1" name="Do a Google search">
+<kw name="Search information on Google">
+<kw name="Given I am in Google page" library="home_page_search">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200331 08:23:31.611" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20200331 08:23:31.611" endtime="20200331 08:23:36.036"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:31.610" endtime="20200331 08:23:36.036"></status>
+</kw>
+<kw name="When I fill the search field with &quot;cucumber&quot;" library="home_page_search">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCH_FIELD}</arg>
+<arg>cucumber</arg>
+</arguments>
+<msg timestamp="20200331 08:23:36.038" level="INFO">Typing text 'cucumber' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20200331 08:23:36.037" endtime="20200331 08:23:36.186"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:36.036" endtime="20200331 08:23:36.186"></status>
+</kw>
+<kw name="Then I click the &quot;Buscar con Google&quot; button" library="home_page_search">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.querySelector('.gNO89b').click()</arg>
+</arguments>
+<msg timestamp="20200331 08:23:36.188" level="INFO">Executing JavaScript:
+document.querySelector('.gNO89b').click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20200331 08:23:36.187" endtime="20200331 08:23:38.402"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:36.187" endtime="20200331 08:23:38.403"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:31.610" endtime="20200331 08:23:38.403"></status>
+</kw>
+<kw name="Verify search results">
+<kw name="Given I am in results search page" library="result_page_search">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${RESULT_NUMBER}</arg>
+</arguments>
+<status status="PASS" starttime="20200331 08:23:38.406" endtime="20200331 08:23:38.421"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:38.404" endtime="20200331 08:23:38.422"></status>
+</kw>
+<kw name="Then I see the results related to &quot;cucumber&quot;" library="result_page_search">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${RESULT_WORD}</arg>
+</arguments>
+<status status="PASS" starttime="20200331 08:23:38.423" endtime="20200331 08:23:38.473"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:38.422" endtime="20200331 08:23:38.473"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:38.404" endtime="20200331 08:23:38.473"></status>
+</kw>
+<status status="PASS" starttime="20200331 08:23:31.609" endtime="20200331 08:23:38.473" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200331 08:23:31.365" endtime="20200331 08:23:38.475"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Search">Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
