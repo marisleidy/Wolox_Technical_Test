@@ -6,7 +6,8 @@ Instalar Python
 
 https://www.python.org/
 
-Clonar el repositorio "Robotframework" usando
+Clonar el repositorio
+
 https://github.com/marisleidy/Wolox_Technical_Test.git
 Instalar Robot framework (pip install robotframework)
 
