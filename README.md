@@ -1,4 +1,5 @@
-Wolox_Technical_Test
+Wolox_Technical_Test  El  proyecto fue  realizado en Robotframework con Python. 
+
 Pasos para la ejecución
 
 Instalar Python
